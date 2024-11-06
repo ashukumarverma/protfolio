@@ -1,13 +1,10 @@
 import "./App.css";
+import ProfileCard from "./assets/ProfileCard";
 
 function App() {
   return (
     <>
-      <div>
-        <p>Hi there! I am</p>
-        <p>Ashutosh Kumar</p>
-        <p>a MERN stack developer</p>
-      </div>
+      <ProfileCard />
     </>
   );
 }
