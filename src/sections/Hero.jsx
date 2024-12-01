@@ -3,14 +3,17 @@ import { PerspectiveCamera } from "@react-three/drei";
 import HackerRoom from "../components/HackerRoom";
 import CanvasLoader from "../components/CanvasLoader";
 import { Suspense } from "react";
-import { Leva, useControls } from "leva";
+// import { Leva, useControls } from "leva"; //for leva controls
 import { useMediaQuery } from "react-responsive";
 
 import { calculateSizes } from "../constants/index.js";
+import Target from "../components/Target.jsx";
+import ReactLogo from "../components/ReactLogo.jsx";
+import Rings from "../components/Rings.jsx";
+import Cube from "../components/Cube.jsx";
 
 const Hero = () => {
   //for leva controls
-
   // const x = useControls("HackerRoom", {
   //   positionX: {
   //     value: 2.5,
@@ -91,6 +94,12 @@ const Hero = () => {
               rotation={[0.2, -3.4, 0]}
               scale={sizes.deskScale}
             />
+            <group>
+              <Target position={sizes.targetPosition} />
+              <ReactLogo position={sizes.reactLogoPosition} />
+              <Rings position={sizes.ringPosition} />
+              <Cube position={sizes.cubePosition} />
+            </group>
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
