@@ -11,6 +11,8 @@ import Target from "../components/Target.jsx";
 import ReactLogo from "../components/ReactLogo.jsx";
 import Rings from "../components/Rings.jsx";
 import Cube from "../components/Cube.jsx";
+import HeroCamera from "../components/HeroCamera.jsx";
+import Button from "../components/Button.jsx";
 
 const Hero = () => {
   //for leva controls
@@ -76,24 +78,26 @@ const Hero = () => {
         <Canvas id="canvas" className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 28]} />
-            <HackerRoom
-              //for leva controls
+            <HeroCamera isMobile={isMobile}>
+              <HackerRoom
+                //for leva controls
 
-              // position={[x.positionX, x.positionY, x.positionZ]}
-              // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
-              // scale={[x.scale, x.scale, x.scale]}
+                // position={[x.positionX, x.positionY, x.positionZ]}
+                // rotation={[x.rotationX, x.rotationY, x.rotationZ]}
+                // scale={[x.scale, x.scale, x.scale]}
 
-              // for static values
+                // for static values
 
-              // position={isMobile ? [1.1, -2, 2] : [1.6, -8.5, 1.9]}
-              // rotation={[0.2, -3.4, 0]}
-              // scale={isMobile ? 0.07 : 0.1}
+                // position={isMobile ? [1.1, -2, 2] : [1.6, -8.5, 1.9]}
+                // rotation={[0.2, -3.4, 0]}
+                // scale={isMobile ? 0.07 : 0.1}
 
-              // for dynamic values
-              position={sizes.deskPosition}
-              rotation={[0.2, -3.4, 0]}
-              scale={sizes.deskScale}
-            />
+                // for dynamic values
+                position={sizes.deskPosition}
+                rotation={[0.2, -3.4, 0]}
+                scale={sizes.deskScale}
+              />
+            </HeroCamera>
             <group>
               <Target position={sizes.targetPosition} />
               <ReactLogo position={sizes.reactLogoPosition} />
@@ -104,6 +108,12 @@ const Hero = () => {
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
         </Canvas>
+      </div>
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+        <a href="#contact" className="w-fit">
+          <Button name="Contact Me" isBeam containerClass="sm:w-fit w-full sm:min-w-[96px]" />
+        </a>
+
       </div>
     </section>
   );
