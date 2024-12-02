@@ -1,7 +1,20 @@
 import Globe from "react-globe.gl";
 import Button from "../components/Button";
+import { useState } from "react";
+import { FaGithubSquare } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
 const About = () => {
+  const [hasCopied, setHasCopied] = useState(false);
+  const handleCopy = () => {
+    navigator.clipboard.writeText("ashu10.6p@gmail.com");
+    setHasCopied(true);
+    setTimeout(() => {
+      setHasCopied(false);
+    }, 2000);
+  };
+
   return (
     <section className="c-space my-20">
       <div className="grid xl:grid-cols-3 md:grid-col-2 grid-cols-1 gap-5 h-full">
@@ -71,7 +84,19 @@ const About = () => {
                 I am currently persuing B.Tech from MIT Muzaffarpur.
               </p>
             </div>
-            <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+            <Button name="Contact Me" isBeam containerClass="w-full mt-2" />
+            <p className="grid-subtext text-center">Connect with me on</p>
+            <div className="flex gap-2 w-full justify-center items-center">
+              <a href="https://in.linkedin.com/in/ashutosh-kumar-157663223" className="btn w-full">
+                <BsLinkedin />
+              </a>
+              <a href="https://github.com/ashukumarverma" className="btn w-full">
+                <FaGithubSquare />
+              </a>
+              <a href="https://www.instagram.com/ashukumarverma" className="btn w-full">
+                <BsInstagram />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -93,6 +118,28 @@ const About = () => {
           </div>
         </div>
 
+        <div className="xl:col-span-1 xl:row-span-2">
+          <div className="grid-container">
+            <img
+              src="assets/grid4.png"
+              alt="grid-4"
+              className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top"
+            />
+
+            <div className="space-y-2">
+              <p className="grid-subtext text-center">Contact me</p>
+              <div className="copy-container" onClick={handleCopy}>
+                <img
+                  src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
+                  alt="copy"
+                />
+                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
+                  ashu10.6p@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
