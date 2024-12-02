@@ -29,11 +29,11 @@ export const navLinks = [
   
   export const myProjects = [
     {
-      title: 'project-1',
-      desc: 'description',
+      title: 'Portfolio',
+      desc: 'This is my portfolio website.',
       subdesc:
-        'sub-description',
-      href: 'link',
+        'This is my portfolio website. It is a 3D portfolio website built using React.js, React-three-fiber, and TailwindCSS. The website is fully responsive and has a dark mode feature. The website is hosted on Vercel. ',
+      href: 'https://protfolio-eight-mauve.vercel.app/',
       texture: 'project.mp4',
       logo: 'logo',
       logoStyle: {
@@ -55,19 +55,29 @@ export const navLinks = [
         },
         {
           id: 3,
-          name: 'TypeScript',
+          name: 'JavaScript',
           path: '/assets/typescript.png',
+        },
+        {
+          id: 4,
+          name: 'React-three-fiber',
+          path: '/assets/react.svg',
+        },
+        {
+          id: 5,
+          name: 'gsap',
+          path: '/assets/react.svg',
         },
       ],
     },
     {
-      title: 'project - 2',
-      desc: 'description',
+      title: 'to-do app',
+      desc: 'This is a to-do app.',
       subdesc:
-        'sub-description',
-      href: 'link',
+        'This is a to-do app. It is a simple to-do app built using React.js and TailwindCSS. The app is fully responsive. The app is hosted on Vercel. ',
+      href: 'https://inspiring-crisp-724e6d.netlify.app/',
       texture: 'project.mp4',
-      logo: 'logo',
+      logo: '/vite.svg',
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
@@ -87,7 +97,7 @@ export const navLinks = [
         },
         {
           id: 3,
-          name: 'TypeScript',
+          name: 'JavaScript',
           path: '/assets/typescript.png',
         },
       ],

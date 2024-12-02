@@ -16,7 +16,7 @@ const About = () => {
   };
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="about">
       <div className="grid xl:grid-cols-3 md:grid-col-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
@@ -75,7 +75,7 @@ const About = () => {
                     size: 1,
                   },
                 ]}
-                pointAltitude={0.5}
+                pointAltitude={0.2}
               />
             </div>
             <div>
@@ -86,7 +86,7 @@ const About = () => {
             </div>
             <Button name="Contact Me" isBeam containerClass="w-full mt-2" />
             <p className="grid-subtext text-center">Connect with me on</p>
-            <div className="flex gap-2 w-full justify-center items-center">
+            <div className="flex gap-2 w-full justify-center mb-5">
               <a href="https://in.linkedin.com/in/ashutosh-kumar-157663223" className="btn w-full">
                 <BsLinkedin />
               </a>
