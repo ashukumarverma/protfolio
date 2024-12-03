@@ -9,7 +9,7 @@ import { useGLTF, useTexture } from "@react-three/drei";
 const HackerRoom = (props) => {
   const { nodes, materials } = useGLTF("/models/hacker-room.glb");
 
-  const monitortxt = useTexture("textures/desk/monitor.png");
+  const monitorTxt = useTexture("textures/desk/monitor.png");
   const screenTxt = useTexture("textures/desk/screen.png");
 
   return (
@@ -32,7 +32,7 @@ const HackerRoom = (props) => {
         geometry={nodes.table_table_mat_0_2.geometry}
         material={materials.computer_mat}
       >
-        <meshMatcapMaterial map={monitortxt} />
+        <meshMatcapMaterial map={monitorTxt} />
       </mesh>
       <mesh
         geometry={nodes.table_table_mat_0_3.geometry}
@@ -58,7 +58,7 @@ const HackerRoom = (props) => {
         geometry={nodes.table_table_mat_0_8.geometry}
         material={materials.tv_mat}
       >
-        <meshMatcapMaterial map={monitortxt} />
+        <meshMatcapMaterial map={monitorTxt} />
       </mesh>
       <mesh
         geometry={nodes.table_table_mat_0_9.geometry}
