@@ -46,10 +46,10 @@ const Contact = () => {
   return (
     <section className="c-space my-20" id="contact">
       <div className="relative flex min-h-screen flex-col justify-center items-center border border-black-500 rounded-md">
-        <div className="w-full h-12 bg-gradient-to-r from-black-500 to-black-300 rounded-md flex items-center px-5 gap-2">
-          <div className="w-5 h-5 rounded-full bg-red-600"></div>
-          <div className="w-5 h-5 rounded-full bg-yellow-600"></div>
-          <div className="w-5 h-5 rounded-full bg-green-600"></div>
+        <div className="w-full h-10 bg-gradient-to-r from-black-500 to-black-300 rounded-t-md flex items-center px-5 gap-3">
+          <div className="w-4 h-4 sm:h-3 sm:w-3 rounded-full bg-red-600 border-red-600 shadow-[0_0_2px_#fff,inset_0_0_1px_#f00,0_0_5px_#f00,0_0_10px_#f00,0_0_30px_#f00]"></div>
+          <div className="w-4 h-4 sm:h-3 sm:w-3 rounded-full bg-yellow-600 border-yellow-600 shadow-[0_0_2px_#fff,inset_0_0_1px_#ff0,0_0_5px_#ff0,0_0_10px_#f00,0_0_30px_#ff0]"></div>
+          <div className="w-4 h-4 sm:h-3 sm:w-3 rounded-full bg-green-600 border-green-600 shadow-[0_0_2px_#fff,inset_0_0_1px_#0f0,0_0_5px_#0f0,0_0_10px_#0f0,0_0_30px_#0f0] "></div>
         </div>
         <div className="contact-container mb-20">
           <h3 className="head-text">Contact me</h3>
