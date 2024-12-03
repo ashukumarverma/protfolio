@@ -35,7 +35,7 @@ export const navLinks = [
         'This is my portfolio website. It is a 3D portfolio website built using React.js, React-three-fiber, and TailwindCSS. The website is fully responsive and has a dark mode feature. The website is hosted on Vercel. ',
       href: 'https://protfolio-eight-mauve.vercel.app/',
       texture: '/textures/project/project1.mp4',
-      logo: 'logo',
+      logo: '/vite.svg',
       logoStyle: {
         backgroundColor: '#2A1816',
         border: '0.2px solid #36201D',
@@ -56,17 +56,17 @@ export const navLinks = [
         {
           id: 3,
           name: 'JavaScript',
-          path: '/assets/typescript.png',
+          path: '/assets/javascript-logo.svg',
         },
         {
           id: 4,
           name: 'React-three-fiber',
-          path: '/assets/react.svg',
+          path: '/assets/threejs-1.svg',
         },
         {
           id: 5,
           name: 'gsap',
-          path: '/assets/react.svg',
+          path: '/assets/gsap-greensock.svg',
         },
       ],
     },
@@ -98,7 +98,7 @@ export const navLinks = [
         {
           id: 3,
           name: 'JavaScript',
-          path: '/assets/typescript.png',
+          path: '/assets/javascript-logo.svg',
         },
       ],
     },

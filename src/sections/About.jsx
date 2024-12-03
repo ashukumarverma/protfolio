@@ -27,7 +27,7 @@ const About = () => {
             />
             <div>
               <p className="grid-headtext ">Hi, I am Ashutosh</p>
-              <p className="grid-subtext"> small Introoduction </p>
+              <p className="grid-subtext"> Undergraduate 4th Year Student. Persuing B.Tech degree in Information Technology from MIT Muzaffarpur. I like to code and develope things.</p>
             </div>
           </div>
         </div>
@@ -40,8 +40,9 @@ const About = () => {
               className="w-full sm:h-[276px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">Tech Stack</p>
+              <p className="grid-headtext">Tech Stack & Tools</p>
+              <p className="grid-subtext">Development Tech Stack: HTML, CSS, JavaScript, TypeScript ReactJS, NextJS, TailwindCSS</p>
+              <p className="grid-subtext">Tools: Git/GitHub, MongoDB,  </p>
             </div>
           </div>
         </div>
