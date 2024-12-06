@@ -27,7 +27,12 @@ const About = () => {
             />
             <div>
               <p className="grid-headtext ">Hi, I am Ashutosh</p>
-              <p className="grid-subtext"> Undergraduate 4th Year Student. Persuing B.Tech degree in Information Technology from MIT Muzaffarpur. I like to code and develope things.</p>
+              <p className="grid-subtext">
+                {" "}
+                Undergraduate 4th Year Student. Persuing B.Tech degree in
+                Information Technology from MIT Muzaffarpur. I like to code and
+                develope things.
+              </p>
             </div>
           </div>
         </div>
@@ -41,8 +46,11 @@ const About = () => {
             />
             <div>
               <p className="grid-headtext">Tech Stack & Tools</p>
-              <p className="grid-subtext">Development Tech Stack: HTML, CSS, JavaScript, TypeScript ReactJS, NextJS, TailwindCSS</p>
-              <p className="grid-subtext">Tools: Git/GitHub, MongoDB,  </p>
+              <p className="grid-subtext">
+                Development Tech Stack: HTML, CSS, JavaScript, TypeScript
+                ReactJS, NextJS, TailwindCSS
+              </p>
+              <p className="grid-subtext">Tools: Git/GitHub, MongoDB, </p>
             </div>
           </div>
         </div>
@@ -85,16 +93,27 @@ const About = () => {
                 I am currently persuing B.Tech from MIT Muzaffarpur.
               </p>
             </div>
-            <Button name="Contact Me" isBeam containerClass="w-full mt-2" />
+            <a href="#contact">
+              <Button name="Contact Me" isBeam containerClass="w-full mt-2" />
+            </a>
             <p className="grid-subtext text-center">Connect with me on</p>
             <div className="flex gap-2 w-full justify-center mb-5">
-              <a href="https://in.linkedin.com/in/ashutosh-kumar-157663223" className="btn w-full">
+              <a
+                href="https://in.linkedin.com/in/ashutosh-kumar-157663223"
+                className="btn w-full"
+              >
                 <BsLinkedin />
               </a>
-              <a href="https://github.com/ashukumarverma" className="btn w-full">
+              <a
+                href="https://github.com/ashukumarverma"
+                className="btn w-full"
+              >
                 <FaGithubSquare />
               </a>
-              <a href="https://www.instagram.com/ashukumarverma" className="btn w-full">
+              <a
+                href="https://www.instagram.com/ashukumarverma"
+                className="btn w-full"
+              >
                 <BsInstagram />
               </a>
             </div>
