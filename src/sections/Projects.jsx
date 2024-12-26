@@ -81,7 +81,7 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <p>Check Live Demo</p>
+              <p>Link</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
           </div>
