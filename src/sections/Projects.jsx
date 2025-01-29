@@ -1,12 +1,13 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { myProjects } from "../constants/index.js";
-import { Suspense, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { Center, OrbitControls } from "@react-three/drei";
+import { useState } from "react";
+// import { Suspense } from "react";
+// import { Canvas } from "@react-three/fiber";
+// import { Center, OrbitControls } from "@react-three/drei";
 
-import CanvasLoader from "../components/CanvasLoader.jsx";
-import DemoComputer from "../components/DemoComputer.jsx";
+// import CanvasLoader from "../components/CanvasLoader.jsx";
+// import DemoComputer from "../components/DemoComputer.jsx";
 
 const projectCount = myProjects.length;
 
@@ -113,7 +114,7 @@ const Projects = () => {
         </div> */}
 
         <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-          <Canvas>
+          {/* <Canvas>
             <ambientLight intensity={Math.PI} />
             <directionalLight position={[10, 10, 5]} />
             <Center>
@@ -124,7 +125,9 @@ const Projects = () => {
               </Suspense>
             </Center>
             <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
-          </Canvas>
+          </Canvas> */}
+          {/* scrollbar style */}
+          <iframe src={currentProject.href} frameborder="0" className="h-full w-full"  />
         </div>
       </div>
     </section>

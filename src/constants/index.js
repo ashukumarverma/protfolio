@@ -75,7 +75,7 @@ export const navLinks = [
       desc: "real time collabrative tool",
       subdesc:
         "Developed a real-time collaborative editing platform using the MERN stack, featuring live document updates, rich text editing, secure authentication. Integrated Socket.IO for seamless collaboration and MongoDB for efficient data storage.",
-      href: "https://github.com/ashukumarverma/DocHive",
+      href: "https://doc-hive.vercel.app/",
       texture: "/textures/project/project1.mp4",
       logo: "/vite.svg",
       logoStyle: {
