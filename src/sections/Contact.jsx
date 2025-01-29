@@ -44,8 +44,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="c-space my-20" id="contact">
-      <div className="relative flex min-h-screen flex-col justify-center items-center border border-black-500 rounded-md">
+    <section className="c-space mt-20 pt-20 mb-10" id="contact">
+      <div className="relative flex flex-col items-center border border-black-500 rounded-md">
         <div className="w-full h-10 bg-gradient-to-r from-black-500 to-black-300 rounded-t-md flex items-center px-5 gap-3">
           <div className="w-4 h-4 sm:h-3 sm:w-3 rounded-full bg-red-600 border-red-600 shadow-[0_0_2px_#fff,inset_0_0_1px_#f00,0_0_5px_#f00,0_0_10px_#f00,0_0_30px_#f00]"></div>
           <div className="w-4 h-4 sm:h-3 sm:w-3 rounded-full bg-yellow-600 border-yellow-600 shadow-[0_0_2px_#fff,inset_0_0_1px_#ff0,0_0_5px_#ff0,0_0_10px_#f00,0_0_30px_#ff0]"></div>

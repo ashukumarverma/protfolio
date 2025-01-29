@@ -35,7 +35,7 @@ const Projects = () => {
   const currentProject = myProjects[selectedProjectIndex];
 
   return (
-    <section className="c-space my-20" id="projects">
+    <section className="c-space my-20 pt-20" id="projects">
       <p>My Projects</p>
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full">
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200">
@@ -113,7 +113,7 @@ const Projects = () => {
           <video autoPlay loop muted playsInline src={currentProject.texture} />
         </div> */}
 
-        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
+        <div className="border border-black-300 bg-black-200 flex items-center rounded-lg h-96 md:h-full">
           {/* <Canvas>
             <ambientLight intensity={Math.PI} />
             <directionalLight position={[10, 10, 5]} />
@@ -126,8 +126,12 @@ const Projects = () => {
             </Center>
             <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
           </Canvas> */}
-          {/* scrollbar style */}
-          <iframe src={currentProject.href} frameborder="0" className="h-full w-full"  />
+
+          <img
+            src={currentProject.pic}
+            alt={currentProject.title}
+            className="w-full object-cover overflow-hidden rounded-md"
+          />
         </div>
       </div>
     </section>
